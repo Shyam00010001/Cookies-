@@ -216,9 +216,7 @@ def save_to_channel(cookie_text, nftoken_link, expires, user_id, username):
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     text = (
-        "╔════════════════════════════════╗\n"
-        "║  🎬 **NETFLIX NFT BOT** 🎬   ║\n"
-        "╚════════════════════════════════╝\n\n"
+        "😵 **NETFLIX NF TOKEN** 😵\n\n"
         "👑 **Owner:** ❤️ 𝐏𝐀𝐖𝐀𝐍 𝐒𝐀𝐈𝐍𝐈 ❤️\n\n"
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n"
         "📌 **Commands:**\n"
@@ -228,7 +226,6 @@ def send_welcome(message):
         "⚡ **Made with ❤️ by:** 𝐏𝐀𝐖𝐀𝐍 𝐒𝐀𝐈𝐍𝐈"
     )
     bot.reply_to(message, text, parse_mode='Markdown')
-
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
     text = message.text
