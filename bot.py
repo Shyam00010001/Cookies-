@@ -216,15 +216,17 @@ def save_to_channel(cookie_text, nftoken_link, expires, user_id, username):
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     text = (
-        "👋 **Welcome to Netflix NFToken Bot**\n\n"
-        "👤 **Owner:** Pawan Saini\n\n"
-        "━━━━━━━━━━━━━━━━━━━━\n\n"
-        "🔹 **Send your Netflix cookie**\n"
-        "🔹 **Get NFToken instantly**\n"
-        "🔹 **Auto-saved in channel**\n\n"
-        "━━━━━━━━━━━━━━━━━━━━\n\n"
+        "┌─────────────────────────────────┐\n"
+        "│  ✨ 𝐍𝐄𝐓𝐅𝐋𝐈𝐗 𝐍𝐅𝐓𝐎𝐊𝐄𝐍 𝐁𝐎𝐓 ✨  │\n"
+        "└─────────────────────────────────┘\n\n"
+        "👑 **Creator:** ❣️ 𝐏𝐀𝐖𝐀𝐍 𝐒𝐀𝐈𝐍𝐈 ❣️\n\n"
+        "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n\n"
+        "📌 **Commands:**\n"
+        "   🍪 Send Cookie → Get Token\n"
+        "   💾 Auto Save in Channel\n\n"
+        "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n\n"
         "📱 **Contact:** @PawanSaini\n"
-        "❤️ **Happy Token Generation!**"
+        "⚡ **Made with ❤️ by:** ᴘᴀᴡᴀɴ ꜱᴀɪɴɪ"
     )
     bot.reply_to(message, text, parse_mode='Markdown')
 
