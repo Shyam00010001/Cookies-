@@ -14,7 +14,7 @@ from telebot import apihelper
 apihelper.READ_TIMEOUT = 60
 apihelper.CONNECT_TIMEOUT = 60
 
-BOT_TOKEN = os.environ.get("8895597929:AAFeC_fqjhF7K8nbQZPA6KnNTPMsw75AFTE")
+BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 if not BOT_TOKEN:
     print("❌ TELEGRAM_TOKEN not found in environment variables!")
     exit(1)
